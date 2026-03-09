@@ -888,6 +888,37 @@ textarea {
   -webkit-animation: wheel 1.3s infinite;
 }
 
+/* 1. The Highlight Rule - Now with a closing bracket! */
+.skill-highlight {
+  background-color: #e8f5e9 !important; 
+  color: #2d5a27 !important;           
+  border: 1px solid #2d5a27;            
+  font-weight: 700;                     
+} /* <--- THIS WAS MISSING */
+
+/* 2. The Skills Base State */
+.skills__skill {
+  display: inline-block; /* Helps the movement look smoother */
+  transition: all 0.3s ease !important;
+}
+
+/* 3. The Skills Hover State */
+.skills__skill:hover {
+  background-color: #2d5a27 !important; 
+  color: #ffffff !important;           
+  transform: translateY(-5px) !important; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); 
+  cursor: pointer;
+}
+
+/* 4. The PDF Button Hover */
+.project-details__links-btn:hover {
+  background-color: #3e7a37 !important; 
+  transform: scale(1.05) !important;
+  transition: all 0.3s ease !important;
+}
+
+/* 5. The Mouse Animation (Keep this at the very bottom) */
 @keyframes wheel {
   to {
     opacity: 0;
@@ -896,9 +927,5 @@ textarea {
 }
 @-webkit-keyframes wheel {
   to {
-    opacity: 0;
-    top: 27px;
-  }
-}
 
 /*# sourceMappingURL=style.css.map */
