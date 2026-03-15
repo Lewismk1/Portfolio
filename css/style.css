@@ -925,7 +925,11 @@ textarea {
     top: 27px;
   }
 }
-@-webkit-keyframes wheel {
-  to {
 
+.project-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;   /* Fits the entire image inside the box */
+  background-color: #fff; /* Optional: fills empty space with background */
+}
 /*# sourceMappingURL=style.css.map */
